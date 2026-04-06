@@ -27,9 +27,9 @@
   --c-surface: #FFFFFF;
   --c-warm: #EFEBE3;
   --c-ink: #1A1714;
-  --c-ink-2: #3D3830;
-  --c-ink-3: #6B6358;
-  --c-ink-4: #9E9588;
+  --c-ink-2: #2A2520;
+  --c-ink-3: #4A4238;
+  --c-ink-4: #7A7068;
   --c-accent: #8B3A2F;
   --c-accent-hover: #722E25;
   --c-gold: #A6893A;
@@ -121,10 +121,10 @@ body {
 }
 
 .hero-sub {
-  font-weight: 200;
-  font-size: clamp(13px, 2vw, 16px);
+  font-weight: 400;
+  font-size: clamp(15px, 2.5vw, 18px);
   letter-spacing: 0.14em;
-  opacity: 0.85;
+  opacity: 0.9;
   margin-bottom: 28px;
 }
 
@@ -209,10 +209,10 @@ body {
 
 .intro-label {
   font-family: var(--ff-accent);
-  font-size: 13px;
+  font-size: 16px;
   font-style: italic;
   letter-spacing: 0.3em;
-  color: var(--c-ink-4);
+  color: var(--c-ink-3);
   margin-bottom: 20px;
   text-transform: lowercase;
 }
@@ -267,7 +267,7 @@ body {
 .product-gallery-item img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   display: block;
   transition: transform 0.6s var(--ease-out);
 }
@@ -373,10 +373,10 @@ body {
 
 .kodawari-eyebrow {
   font-family: var(--ff-accent);
-  font-size: 13px;
+  font-size: 16px;
   font-style: italic;
   letter-spacing: 0.3em;
-  color: var(--c-ink-4);
+  color: var(--c-ink-3);
   text-align: center;
   margin-bottom: 12px;
 }
@@ -564,6 +564,11 @@ body {
   transition: color 0.3s;
 }
 .footer-nav a:hover { color: rgba(255,255,255,0.85); }
+
+.footer-address a {
+  color: inherit;
+  text-decoration: none;
+}
 
 .footer-copy {
   max-width: 720px;
@@ -759,7 +764,7 @@ body {
       <p class="footer-address">
         〒980-0821 宮城県仙台市青葉区春日町10-23<br>
         春山ビル1階 B号室<br>
-        TEL: 022-261-4490
+        TEL: <span style="color: inherit;">022-261-4490</span>
       </p>
     </div>
     <nav class="footer-nav">
